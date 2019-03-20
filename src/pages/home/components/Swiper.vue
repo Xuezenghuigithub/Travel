@@ -20,18 +20,16 @@ export default {
           type: 'bullets',
           clickable: true
         },
-        autoplay: 3000, // 自动轮播
-        speed: 1000, // 轮播速度
         loop: true // 无缝轮播
       },
       swiperList: [
         {
           id: '0001',
-          imgUrl: 'https://imgs.qunarzz.com/piao/fusion/1507/29/46d244176c9623.jpg_890x330_db953c72.jpg'
+          imgUrl: '//img1.qunarzz.com/vc/2a/96/76/d149c7a3a5b113f876f9a66e09.png'
         },
         {
           id: '0002',
-          imgUrl: 'https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/813d7d1fe073c569066befe1e4517eeb.jpg_890x330_d0ec0a9a.jpg'
+          imgUrl: '//img1.qunarzz.com/vc/80/80/1a/72b8f423c33e581ca72fc136da.jpg'
         }]
     }
   }
@@ -46,7 +44,7 @@ export default {
     width: 100%
     height: 0
     overflow: hidden
-    padding-bottom: 31.25%
+    padding-bottom: 30.25%
     background: #eee
     .swiper-img
       width: 100%
