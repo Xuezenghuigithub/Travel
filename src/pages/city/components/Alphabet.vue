@@ -51,8 +51,7 @@ export default {
         if (this.timer) {
           clearTimeout(this.timer)
         }
-        this.timer = setTimeout(() => { // 函数节流,如果正在执行handleTouchMove，延迟16毫秒再执行；
-          // 如果在16毫秒之内再执行，则清除上一次的函数，重新执行
+        this.timer = setTimeout(() => { // 函数节流,如果正在执行handleTouchMove，延迟16毫秒再执行；如果在16毫秒之内再执行，则清除上一次
           const touchY = e.touches[0].clientY - 79 // 获取拉取时鼠标距离Header底部的高度
           const index = Math.floor((touchY - this.startY) / 20) // 计算差值，表示到第几个字母
           if (index >= 0 && index < this.letters.length) {
