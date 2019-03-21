@@ -48,10 +48,6 @@ export default {
         desc: '西安必游'
       }, {
         id: '0008',
-        imgUrl: 'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/de711920c71e38287d9f95f7910aa1aa.png',
-        desc: '精品小团'
-      }, {
-        id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png',
         desc: '全部玩乐'
       }]
@@ -79,34 +75,35 @@ export default {
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
-
-  .icon
-    position: relative
-    overflow: hidden
-    width: 25%
-    height: 0
-    float: left
-    padding-bottom: 25%
-    .icon-img
-      position: absolute
-      top: 0
-      left: 0
-      right: 0
-      bottom: .44rem
-      box-sizing: border-box
-      padding: .1rem
-      .icon-img-content
-        display: block
-        margin: 0 auto
-        height: 100%
-    .icon-desc
-      position absolute
-      bottom: 0
-      left: 0
-      right: 0
-      height: .44rem
-      line-height: .44rem
-      text-align: center
-      color: $darkTextColor
-      ellipsis()
+  .icons
+    margin-top: .1rem
+    .icon
+      position: relative
+      overflow: hidden
+      width: 25%
+      height: 0
+      float: left
+      padding-bottom: 25%
+      .icon-img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: .44rem
+        box-sizing: border-box
+        padding: .1rem
+        .icon-img-content
+          display: block
+          margin: 0 auto
+          height: 100%
+      .icon-desc
+        position absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: .44rem
+        line-height: .44rem
+        text-align: center
+        color: $darkTextColor
+        ellipsis()
 </style>
