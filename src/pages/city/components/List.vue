@@ -17,8 +17,12 @@
           </div>
         </div>
       </div>
-      <div class="area" v-for="(item,key) of cities" :key="key">
-        <div class="title border-topbottom">A</div>
+      <div class="area"
+           v-for="(item,key) of cities"
+           :key="key"
+           :ref="key"
+      >
+        <div class="title border-topbottom">{{ key }}</div>
         <div class="item-list">
           <div class="item border-bottom"
                v-for="innerItem of item"
@@ -38,10 +42,19 @@ export default {
   name: 'CityList',
   props: {
     hot: Array,
-    cities: Object
+    cities: Object,
+    letter: String
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0] // 取数组的第一个元素，即DOM元素
+        this.scroll.scrollToElement(element) // 参数必须为一个DOM元素
+      }
+    }
   }
 }
 </script>
