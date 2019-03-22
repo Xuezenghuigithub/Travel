@@ -47,6 +47,9 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  deactivated () { // 页面即将被隐藏或即将变为新的页面时执行
+    window.removeEventListener('scroll', this.handleScroll) // 全局事件解绑
   }
 }
 </script>
