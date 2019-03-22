@@ -7,10 +7,5 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({ // 创建仓库
   state,
-  mutations,
-  getters: {
-    doubleCity (state) {
-      return state.city + ' ' + state.city
-    }
-  }
+  mutations
 })
