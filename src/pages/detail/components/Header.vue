@@ -45,7 +45,7 @@ export default {
       }
     }
   },
-  activated () {
+  mounted () {
     window.addEventListener('scroll', this.handleScroll)
   },
   deactivated () { // 页面即将被隐藏或即将变为新的页面时执行
